@@ -7,11 +7,11 @@ package anu is
 	subtype trans_type is integer range -64 to 63; -- transition type
 	subtype input_type is integer range -512 to 511;
 	subtype rate_type is integer range 1 to 4;
+	subtype tb_type is std_logic_vector(7 downto 0);
 	
 	type state_array is array(natural range m-1 downto 0) of state_type;
 	type trans_array is array(0 to 3, 0 to 3) of trans_type;
 	type input_array is array(0 to 3) of input_type;
-	
-	type tb_type is array(0 to 3) of std_logic_vector(7 downto 0); -- traceback
+	type tb_array is array(0 to 3) of tb_type; -- traceback
 	
 end anu;

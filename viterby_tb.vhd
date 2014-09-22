@@ -29,8 +29,8 @@ architecture bhv of viterby_tb is
 		(     0, 2#01#,     0, 2#10#),
 		(     0, 2#10#,     0, 2#01#));
 		
-	constant INIT_FILE : string := "dec_input_stream.txt";	-- File with initial memory contents
-	constant OUTPUT_FILE  : string := "dec_output_stream.txt";   -- File to write changed memory contents to
+	constant INIT_FILE : string := "../Matlab/Dsplog/dec_input_stream.txt";	-- File with initial memory contents
+	constant OUTPUT_FILE  : string := "dec_output_stream_modelsim.txt";   -- File to write changed memory contents to
 	
 	constant clk_period	: time := 10 ns;
 	
